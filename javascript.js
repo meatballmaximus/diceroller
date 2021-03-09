@@ -6,6 +6,6 @@ function roll() {
   document.getElementById("demo").innerHTML = x;
 }
 
-function numberOfRolls() {
-	
+function counter() {
+	console.log(document.getElementById("dice").value)
 }
