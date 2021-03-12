@@ -1,11 +1,12 @@
-const numberOfDice = document.getElementById("dice")
-
-function counter() {
-	console.log(document.getElementById("dice").value)
-}
+const numOfDice = document.getElementById("dice");
 
 function roll() {
-  var x = Math.floor((Math.random() * 6) + 1);
-  document.getElementById("demo").innerHTML = x;
+	var result = [];
+	 for (var i = 0; i < numOfDice.value; i++){
+  result.push(Math.floor((Math.random() * 6) + 1));
 }
+return result;
+}
+
+
 
