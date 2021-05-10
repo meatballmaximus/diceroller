@@ -8,5 +8,16 @@ function roll() {
 return result;
 }
 
+function printNumber(number) {
+  var results = document.getElementById('results');
+  results.innerHTML = number;
+}
+
+var button = document.getElementById('button');
+
+button.onclick = function() {
+  var result = dice.roll();
+  printNumber(result);
+};
 
 
