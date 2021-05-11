@@ -1,23 +1,14 @@
 const numOfDice = document.getElementById("dice");
+var rollResults = document.querySelector("p")
 
 function roll() {
 	var result = [];
 	 for (var i = 0; i < numOfDice.value; i++){
   result.push(Math.floor((Math.random() * 6) + 1));
 }
-return result;
+rollResults.textContent = result;
 }
 
-function printNumber(number) {
-  var results = document.getElementById('results');
-  results.innerHTML = number;
-}
 
-var button = document.getElementById('button');
-
-button.onclick = function() {
-  var result = dice.roll();
-  printNumber(result);
-};
 
 
