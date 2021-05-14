@@ -6,7 +6,8 @@ function roll() {
 	 for (var i = 0; i < numOfDice.value; i++){
   result.push(Math.floor((Math.random() * 6) + 1));
 }
-rollResults.textContent = result;
+
+rollResults.textContent = result.sort((a,b)=>a-b);
 }
 
 
