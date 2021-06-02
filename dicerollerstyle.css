@@ -1,23 +1,12 @@
-#one {
-
+/*body {
+	display: flex;
+}
+*/
+.container {
+	display: flex;
+	flex-direction: column;
 }
 
-#two {
-
-}
-
-#three {
-
-}
-
-#four {
-
-}
-
-#five {
-
-}
-
-#six{
-	
+.reroll {
+	width: 100px;
 }
